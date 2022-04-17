@@ -30,4 +30,17 @@ public class Main {
                 }
             }
     }
+        public static void fourthTask() {
+        int[][]table = new int[6][6];
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                table[i][j] = 1;
+                    if (i == j || j == 5&&i == 0 || j == 4&&i == 1 || j == 3&&i == 2 || j == 2&&i == 3 || j == 1&&i == 4 || j == 0&&i == 5) {
+                System.out.print(table[i][j] + " ");
+                    }   else {
+                        System.out.print("  ");
+                    }
+            }   System.out.println();
+        }
+    }
 }
