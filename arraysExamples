@@ -24,4 +24,15 @@ public class Main {
         int[]arr = {3, 4, 6, 8};
         System.out.println(Arrays.toString(arr));
     }
+    public static void arrFourth(int[][]arr) {
+        int counter = 1;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = counter;
+                System.out.print(arr[i][j] + " ");
+                counter++;
+            }
+            System.out.println();
+        }   
+    }
 }
